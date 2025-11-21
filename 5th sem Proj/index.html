@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Digital Menu & Ordering Platform</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- QR Code Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>🍽️ Smart Dine - Digital Menu & Ordering</h1>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <!-- QR Section -->
+    <section class="qr-section">
+      <h2>Generate Table QR Code</h2>
+      <input type="text" id="tableNumber" placeholder="Enter Table Number" />
+      <button id="generateQRBtn">Generate QR</button>
+      <div id="qrCode"></div>
+    </section>
+
+    <!-- MENU Section -->
+    <section>
+      <h2>Our Menu</h2>
+      <div class="menu">
+
+        <!-- Existing Items + Added New Items -->
+
+        <!-- Pizza -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/0umadnY.jpg" alt="Margherita Pizza">
+          <h3>Margherita Pizza</h3>
+          <p>Classic cheese pizza with tomato sauce.</p>
+          <span>₹199</span>
+        </div>
+
+        <!-- Burger -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/b9h9GPH.jpeg" alt="Cheese Burger">
+          <h3>Cheese Burger</h3>
+          <p>Juicy grilled burger with double cheese.</p>
+          <span>₹149</span>
+        </div>
+
+        <!-- Sandwich -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/bfyxFhU.jpeg" alt="Grilled Sandwich">
+          <h3>Grilled Sandwich</h3>
+          <p>Loaded veggie sandwich with sauces.</p>
+          <span>₹129</span>
+        </div>
+
+        <!-- Pasta -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/92gE4xr.jpeg" alt="White Sauce Pasta">
+          <h3>White Sauce Pasta</h3>
+          <p>Creamy Alfredo pasta with herbs.</p>
+          <span>₹179</span>
+        </div>
+
+        <!-- Chicken Roll -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/Q6aZx9v.jpeg" alt="Chicken Roll">
+          <h3>Chicken Roll</h3>
+          <p>Spicy chicken packed in soft paratha.</p>
+          <span>₹159</span>
+        </div>
+
+        <!-- French Fries -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/yQXQF4f.jpeg" alt="French Fries">
+          <h3>French Fries</h3>
+          <p>Crispy golden fries with seasoning.</p>
+          <span>₹99</span>
+        </div>
+
+        <!-- Added New Items Below -->
+
+        <!-- Tandoori Chicken -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/3ZQ3ZQ1.jpeg" alt="Tandoori Chicken">
+          <h3>Tandoori Chicken</h3>
+          <p>Spicy and smoky grilled chicken.</p>
+          <span>₹249</span>
+        </div>
+
+        <!-- Veg Biryani -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/9gE3c5Z.jpeg" alt="Veg Biryani">
+          <h3>Veg Biryani</h3>
+          <p>Fragrant rice cooked with mixed vegetables.</p>
+          <span>₹199</span>
+        </div>
+
+        <!-- Chicken Biryani -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/AaB8JgN.jpeg" alt="Chicken Biryani">
+          <h3>Chicken Biryani</h3>
+          <p>Hyderabadi-style spiced chicken rice.</p>
+          <span>₹249</span>
+        </div>
+
+        <!-- Mojito -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/Nx3c3yw.jpeg" alt="Lime Mojito">
+          <h3>Lime Mojito</h3>
+          <p>Refreshing lime + mint cooler.</p>
+          <span>₹79</span>
+        </div>
+
+        <!-- Chocolate Shake -->
+        <div class="menu-item">
+          <img src="https://i.imgur.com/vh7FjjE.jpeg" alt="Chocolate Shake">
+          <h3>Chocolate Shake</h3>
+          <p>Thick and creamy chocolate milkshake.</p>
+          <span>₹129</span>
+        </div>
+
+        
+
+      </div>
+    </section>
+
+    <!-- CART Section -->
+    <section class="cart">
+      <h2>Your Cart</h2>
+      <ul class="cart-items"></ul>
+      <p class="cart-total"></p>
+      <button class="checkout-btn">Checkout</button>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Smart Dine</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
